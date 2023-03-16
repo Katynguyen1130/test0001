@@ -1,5 +1,4 @@
 import React, { useContext } from "react";
-
 import MainLayout from "../layout/MainLayout";
 
 const index = () => {
