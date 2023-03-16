@@ -1,0 +1,17 @@
+.react-switch-handle{
+    background:#A3FD92  !important ;
+    border: 3.8px solid black !important;
+}
+.react-switch-handle.dark{
+    background: linear-gradient(180deg, #8080FF 0%, #AB6AF5 100%) !important ;
+    border: 3.8px solid black !important;
+}
+
+select {
+    appearance: none;
+    background-image: url('../../images/arrow.png');
+    background-repeat: no-repeat;
+    background-position: right 0.4em top 55%, right 1em top calc(100% - 1em);
+    padding-right: 20px;
+  }
+  
