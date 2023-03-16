@@ -1,7 +1,13 @@
 import React, { useState, createContext, useEffect } from "react";
+const getLS = () => {
+  return localStorage.getItem("theme");
+};
+const setLs = (theme) => {
+  localStorage.setItem("theme", theme);
+};
 
 const defaultValue = {
-  theme: "light",
+  theme: getLS() || "light",
   setTheme: () => null,
 };
 
@@ -12,8 +18,10 @@ export const ThemeProvider = ({ children }) => {
   const toggleMode = () => {
     if (theme === "light") {
       setTheme("dark");
+      setLs("dark");
     } else {
       setTheme("light");
+      setLs("light");
     }
   };
 
